@@ -17,7 +17,7 @@ Map logical software components to actual infrastructure choices for deployment 
 
 ### Step 2: Create Infrastructure Design Plan
 - Generate plan with checkboxes [] for infrastructure design
-- Focus on mapping to actual services (AWS, Azure, GCP, on-premise)
+- Focus on mapping to actual AWS services only (AWS is the standard cloud provider; do not use Azure, GCP, or on-premise)
 - Each step should have a checkbox []
 
 ### Step 3: Generate Context-Appropriate Questions
@@ -33,7 +33,7 @@ Map logical software components to actual infrastructure choices for deployment 
 - **When in doubt, ask the question** - overconfidence leads to poor infrastructure choices
 
 **Question categories to evaluate** (consider ALL categories):
-- **Deployment Environment** - Ask about cloud provider preferences, environment setup, and deployment targets
+- **Deployment Environment** - AWS is the standard cloud provider (do NOT ask which cloud); ask about AWS region(s), account/environment setup (dev/staging/prod), and deployment targets
 - **Compute Infrastructure** - Ask about compute service choices, sizing, and scaling requirements
 - **Storage Infrastructure** - Ask about database selection, storage patterns, and data lifecycle needs
 - **Messaging Infrastructure** - Ask about messaging/queuing services, event-driven patterns, and async processing
@@ -67,7 +67,7 @@ Map logical software components to actual infrastructure choices for deployment 
         - Format: "Infrastructure design has mapped [description]:"
         - List key infrastructure services and components (bullet points)
         - List deployment architecture decisions and rationale
-        - Mention cloud provider choices and service mappings
+        - Mention AWS service choices and mappings
         - DO NOT include workflow instructions ("please review", "let me know", "proceed to next phase", "before we proceed")
         - Keep factual and content-focused
      3. **Formatted Workflow Message** (mandatory): Always end with this exact format:

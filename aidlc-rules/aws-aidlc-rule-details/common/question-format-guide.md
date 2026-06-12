@@ -319,13 +319,13 @@ C) Other (please describe after [Answer]: tag below)
 #### Example with 3 meaningful options:
 ```markdown
 ## Question 2
-What is the deployment target?
+Which AWS compute service should host the application?
 
-A) Cloud (AWS, Azure, GCP)
+A) AWS Lambda (serverless)
 
-B) On-premises servers
+B) Amazon ECS / Fargate (containers)
 
-C) Hybrid (both cloud and on-premises)
+C) Amazon EC2 (virtual machines)
 
 D) Other (please describe after [Answer]: tag below)
 
